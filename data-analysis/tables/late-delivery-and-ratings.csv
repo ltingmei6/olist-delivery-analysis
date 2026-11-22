@@ -1,0 +1,4 @@
+﻿sample_key,sample_name,filter_condition,sample_n,late_n,on_time_n,late_low_score_n,late_denominator,late_low_score_rate,on_time_low_score_n,on_time_denominator,on_time_low_score_rate,rate_diff_pp,risk_ratio,low_score_total,check_sum_ok,note
+main,主样本：有效履约 + 有评价,is_late IS NOT NULL AND is_bad_review IS NOT NULL；不限制评价时间,95824,6381,89443,3979,6381,0.623570,8283,89443,0.092606,53.096351,6.733547,12262,True,主分析口径；保留收货前评价，避免排除严重延迟订单的早期低评分
+sensitivity_a,敏感性样本A：评价发生在收货后,主样本 AND review_after_delivery = 1,91056,1905,89151,370,1905,0.194226,8238,89151,0.092405,10.182070,2.101896,8608,True,评价时点敏感性；与主样本差异需结合评价时点解释，不作因果判断
+sensitivity_b,敏感性样本B：仅单条评价订单,主样本 AND review_rows = 1,95299,6353,88946,3962,6353,0.623642,8227,88946,0.092494,53.114805,6.742494,12189,True,多评价订单敏感性；只保留单条评价订单

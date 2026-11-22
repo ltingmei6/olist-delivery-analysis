@@ -1,0 +1,4 @@
+﻿stage,stage_name,raw_n,raw_denominator,raw_negative_n,raw_zero_n,raw_min,raw_mean,raw_median,raw_p90,raw_p99,raw_max,nonnegative_n,nonnegative_denominator,nonnegative_min,nonnegative_mean,nonnegative_median,nonnegative_p90,nonnegative_p99,nonnegative_max,negative_handling
+approval_days,审核阶段（购买→审核通过）,96456,96456,0,1244,0.000000,0.428233,0.014300,1.441450,3.741220,30.893500,96456,96456,0.000000,0.428233,0.014300,1.441450,3.741220,30.893500,未发现负数；原始与非负口径一致
+handling_days,处理阶段（审核通过→交承运商）,95105,95105,0,0,0.000200,2.853392,1.849100,6.023100,17.151720,125.762600,95105,95105,0.000200,2.853392,1.849100,6.023100,17.151720,125.762600,未发现负数；原始与非负口径一致
+transit_days,运输阶段（交承运商→客户收货）,96446,96446,0,12,0.000000,9.333302,7.100300,18.901400,40.985225,205.191000,96446,96446,0.000000,9.333302,7.100300,18.901400,40.985225,205.191000,未发现负数；原始与非负口径一致
